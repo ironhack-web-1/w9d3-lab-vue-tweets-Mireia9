@@ -3,11 +3,11 @@
     <Tweet
     v-for="(tweet, index) in tweets"
     :key="index"
-    :name="tweets.user.name"
-    :image="tweets.user.image"
-    :handle="tweets.user.handle"
-    :timestamp="tweets.timestamp"
-    :message="tweets.message"
+    :name="tweet.user.name"
+    :image="tweet.user.image"
+    :handle="tweet.user.handle"
+    :timestamp="tweet.timestamp"
+    :message="tweet.message"
     ></Tweet>
   </div>
 </template>

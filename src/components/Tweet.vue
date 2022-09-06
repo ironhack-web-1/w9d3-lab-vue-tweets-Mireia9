@@ -1,7 +1,7 @@
 <template>
   <div className="tweet">
     <img
-      src={{image}}
+      :src="image"
       className="profile"
       alt="profile"
     />
