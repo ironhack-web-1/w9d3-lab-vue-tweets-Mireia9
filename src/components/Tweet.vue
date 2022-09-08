@@ -8,17 +8,10 @@
 
         <TimeStamp :timestamp="timestamp" />
       </div>
-
-      <p className="message">
-        {{ message }}
-      </p>
-
+        <Message :message="message" />
+      
       <div className="actions">
-        <!-- Font Awesome icons -->
-        <i class="far fa-comment"></i>
-        <i class="fas fa-retweet"></i>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-share"></i>
+        <ActionsComponent />      
       </div>
     </div>
 
@@ -29,9 +22,11 @@
 import ProfileImage from "./ProfileImage.vue";
 import User from "./User.vue";
 import TimeStamp from "./TimeStamp.vue";
+import Message from "./Message.vue";
+import ActionsComponent from "./ActionsComponent.vue";
 export default {
   props: ["name", "image", "handle", "timestamp", "message"],
-  components: { ProfileImage, User, TimeStamp },
+  components: { ProfileImage, User, TimeStamp, Message, ActionsComponent },
 };
 </script>
 
